@@ -1,0 +1,350 @@
+
+:root {
+    --bg: rgb(160, 210, 8);
+    --black: rgba(0, 0, 0, 0.5);
+    --white: rgba(204, 204, 204, 0.117);
+    --shade: rgba(100, 100, 100, 0.1);
+    --red: rgb(206, 55, 55);
+    --green: rgb(65, 168, 56);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ============================================================================================= */
+
+/* --------------------------------------  TYPOGRAPHY  ----------------------------------- */
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+.center_contents
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+}
+.font_large
+{
+    font-size: 20pt !important;
+}
+.font_medium
+{
+    font-size: 16pt !important;
+}
+.font_normal
+{
+    font-size: 14pt !important;
+}
+.font_small
+{
+    font-size: 12pt !important;
+}
+.text_justify
+{
+    text-align: justify !important;
+}
+.text_left
+{
+    text-align: left !important;
+}
+.text_right
+{
+    text-align: right !important;
+}
+/* ============================================================================================= */
+
+/* --------------------------------------  ADDITIONALS  ----------------------------------- */
+/* NOTES */
+.a_note_red
+{
+    /* font-weight: bold; */
+    text-align: center;
+    font-size: 12pt;
+    color: var(--red);
+}
+.a_note_green
+{
+    /* font-weight: bold; */
+    text-align: center;
+    font-size: 12pt;
+    color: var(--green);
+}
+.title_text
+{
+    font-size: 16pt;
+    color: var(--black);
+    padding: 10px 0;
+    background-color: var(--shade);
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+}
+/* ============================================================================================= */
+
+/* --------------------------------------  CONTAINERS  ----------------------------------- */
+/* BLOCK CONTAINERS */
+
+.fullbox
+{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.fullbox_compact
+{
+    text-align: center;
+    border-radius: 10px;;
+    margin-top: 50px;
+    margin-left: 10%;
+    padding: 50px;
+    width: 75%;
+    box-shadow: 0 0 100px 100px var(--shade);
+}
+
+/* FLEX CONTAINER BOXES */
+.fullbox_flex
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.fullbox_flex_compact
+{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;;
+    margin-top: 50px;
+    margin-left: 10%;
+    padding: 50px;
+    width: 75%;
+    box-shadow: 0 0 100px 100px var(--shade);
+}
+
+/* CONTAINERS MODIFIERS */
+.fullbox_center
+{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%
+}
+/* ============================================================================================= */
+
+
+
+
+/* BUTTONS */
+.flave_button
+{
+    font-size: 12pt;
+    font-weight: 600;
+    color: var(--black);
+    background-color: var(--shade);
+    border-radius: 5px;
+    margin: 5px 10px;
+    padding: 3px 5px;
+    outline: none;
+    border: 1px solid var(--shade)
+}
+.flave_button:hover
+{
+    color: white;
+    background-color: var(--bg);
+}
+
+
+
+
+
+/* COMPONENTS SPECIFIC STYLING  */
+
+/* PAGE HEADER */
+.flave_header1
+{
+    color: white;
+    background-color: var(--bg);
+    text-align: center;
+    font-size: 25pt;
+    padding: 5px 5px;
+}
+.flave_header2
+{
+    color: white;
+    background-color: var(--bg);
+    text-align: center;
+    font-size: 20pt;
+    padding: 5px 5px;
+}
+.flave_header3
+{
+    color: white;
+    background-color: var(--bg);
+    text-align: center;
+    font-size: 16pt;
+    padding: 5px 5px;
+}
+
+
+
+/* NAVIGATION */
+.flave_navbar
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--bg);
+}
+.flave_navitem
+{
+    margin-right: 5px;
+    color: var(--black);
+    font-size: 16pt;
+    padding: 10px 20px;
+}
+.flave_navitem:hover
+{
+    box-shadow: 0 0 2px 2px var(--white);
+    color: var(--white);
+    background-color: rgb(76, 159, 227);
+}
+.flave_input_text
+{
+    margin-right: 5px;
+    color: var(--black);
+    font-size: 16pt;
+    padding: 10px 20px;
+    height: 40px;
+    border-radius: 5px;
+    align-self: right;
+    margin-left:auto;
+    outline: none;
+    border: none;
+}
+
+/* FORM */
+.flave_form
+{
+    display: block;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 5px 5px var(--shade);
+    border-radius: 5px;
+    max-width: 500px;
+}
+.flave_inputgroup
+{
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+
+}
+.flave_forminput
+{
+    padding: 5px 10px;
+    font-size: 12pt;
+    flex: 5;
+    border: 1px solid var(--shade);
+    border-radius: 5px;
+}
+label
+{
+    padding: 5px 0;
+    margin-right: 20px;
+    font-size: 12pt;
+    flex: 3;
+}
+
+/* Signup form */
+.signup_container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    /* margin: 30px; */
+}
+
+
+/*-----------------  EVENTSPAGE  ----------------------------- */
+.calender_container
+{
+    flex: 1;
+    flex-direction: column;
+    justify-self: flex-start !important;
+    align-self: flex-start;
+    padding: 0 10px;
+    background-color: white;
+}
+.calender
+{
+    border-radius: 10px;
+    border: none !important;
+    box-shadow: 0 0 5px 5px var(--shade);
+    padding: 20px;
+    width: 100% !important;
+}
+.eventslist
+{
+    flex: 1.5;
+    padding: 30px;
+    overflow: scroll;
+    height: calc(100vh - 100px);
+    box-shadow: 0 0 10px 10px var(--shade);
+    border-radius: 10px;
+}
+.eventslist::-webkit-scrollbar
+{
+    display: none;
+}
+
+.event_container
+{
+    margin-top: 5px;
+    padding: 10px;
+    color: white;
+    background-color: var(--bg);
+    border-radius: 10px;
+}
+.eventscontent
+{
+    margin: 0 10px;
+    flex: 1;
+    padding: 30px;
+    box-shadow: 0 0 10px 10px var(--shade);
+    border-radius: 10px;
+}
+.todaytile
+{
+    margin: 2px 0 !important;
+    font-size: 12pt;
+    color: white !important;
+    background-color: var(--black) !important;
+    border-radius: 10% !important;
+}
+.datetile
+{
+    margin: 2px 0 !important;
+    font-size: 12pt;
+    border-radius: 10% !important;
+}
+.eventshighlight
+{
+    background-color: var(--bg) !important;
+    color: white !important;
+    border: 1px solid var(--shade) !important;
+}
+
+/* CREATE EVENT MODAL */
+.container
+{
+    margin: 10px 0;
+    padding: 5px;
+}

@@ -1,0 +1,18 @@
+{
+    "pallabjyotisingha@gmail.com": [
+        {
+            "eventname": "Meeting a person",
+            "eventtype": "meeting",
+            "eventdate": "2020-09-18",
+            "eventtime": "22:01",
+            "eventnote": "note"
+        },
+        {
+            "eventname": "Birthday Party",
+            "eventtype": "Party",
+            "eventdate": "2020-09-11",
+            "eventtime": "00:19",
+            "eventnote": "new event"
+        }
+    ]
+}
